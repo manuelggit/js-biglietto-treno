@@ -5,7 +5,7 @@
 // ma c’è uno sconto del 20% per i minorenni
 // e del 40% per gli over 65
 
-var distanza, eta, prezzo, coeff
+var distanza, eta, prezzo,
 
 // chiedo all'utente quanti km vuole percorrere
 
@@ -15,13 +15,16 @@ distanza = prompt('Inserisci il numero di km che vuoi percorrere (scrivi solo nu
 
 eta = parseInt(prompt('Quanti anni hai? (scrivi solo numeri)'));
 
-coeff = 0.6
-
-prezzo = distanza * 0.21 * coeff
+prezzo = distanza * 0.21
 
 if (eta < 18) {
-  document.getElementById('prezzobiglietto').innerHTML = 'Il tuo biglietto costerà solo ' + prezzo * coeff + ' €'
+  document.getElementById('prezzobiglietto').innerHTML = 'Il tuo biglietto costerà solo ' + prezzo * 0.8 + ' €'
+} else if (eta >= 65){
+  document.getElementById('prezzobiglietto').innerHTML = 'Il tuo biglietto costerà solo ' + prezzo * 0.6 + ' €'
+} else {
+  document.getElementById('prezzobiglietto').innerHTML = 'Il tuo biglietto costerà solo ' + prezzo + ' €'
 }
+
 
 // definisco il prezzo del biglietto in base ai km
 
