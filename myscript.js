@@ -15,9 +15,11 @@ distanza = prompt('Inserisci il numero di km che vuoi percorrere (scrivi solo nu
 
 eta = prompt('Quanti anni hai? (scrivi solo numeri)');
 
+prezzo = distanza * 0.21
+
 // definisco il prezzo del biglietto in base ai km
 
-document.getElementById('prezzobiglietto').innerHTML = 0.21 * distanza + ' €'
+document.getElementById('prezzobiglietto').innerHTML = 'Il tuo biglietto costerà solo ' + prezzo + ' €'
 console.log(0.21 * distanza)
 
 // applico lo sconto, se c'è, in base all'età
