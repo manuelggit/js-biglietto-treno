@@ -5,28 +5,38 @@
 // ma c’è uno sconto del 20% per i minorenni
 // e del 40% per gli over 65
 
-var distanza, eta, prezzo,
+var distanza, eta, prezzo, sconto
 
 // chiedo all'utente quanti km vuole percorrere
 
 distanza = parseInt(prompt('Inserisci il numero di km che vuoi percorrere (scrivi solo numeri)'));
 
-console.log(distanza)
+console.log(distanza);
 
 // chiedo all'utente quanti anni ha
 
 eta = parseInt(prompt('Quanti anni hai? (scrivi solo numeri)'));
 
-console.log(eta)
+console.log(eta);
 
-// applico lo sconto, se c'è, in base all'età
+// determino il prezzo pieno grazie il prezzo al km
 
-prezzo = distanza * 0.21
+sconto = 0;
 
-document.getElementById('prezzototale').innerHTML = prezzo;
+prezzo = (distanza * 0.21) - sconto;
+// document.getElementById('prezzototale').innerHTML = prezzo;
 
-console.log(prezzo)
+console.log(prezzo);
 
+// determino gli sconti in base all'età
+
+if (eta < 18){
+  sconto = (prezzo / 100) * 20
+} else if (eta > 65) {
+  sconto = (prezzo / 100) * 40
+}
+
+console.log(prezzo - sconto)
 
 // if (eta < 18) {
 //   document.getElementById('prezzobiglietto').innerHTML = 'Il tuo biglietto costerà solo ' + prezzo * 0.8 + ' €'
