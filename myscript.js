@@ -23,6 +23,10 @@ console.log(eta)
 
 prezzo = distanza * 0.21
 
+document.getElementById('prezzototale').innerHTML = prezzo;
+
+console.log(prezzo)
+
 
 // if (eta < 18) {
 //   document.getElementById('prezzobiglietto').innerHTML = 'Il tuo biglietto costerà solo ' + prezzo * 0.8 + ' €'
