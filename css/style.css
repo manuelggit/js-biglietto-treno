@@ -5,4 +5,43 @@ viola scurissimo: #491782 */
 body {
   background: #9542f5;
   color: white;
+  font-family: 'Quicksand', sans-serif;
+
 }
+/* DEBUG: */
+div {
+  border: 1px solid black;
+}
+/* DEBUG:  */
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+  }
+
+  #logo {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #logo i {
+    font-size: 7em;
+  }
+
+  #logo div {
+    font-size: 4em;
+  }
