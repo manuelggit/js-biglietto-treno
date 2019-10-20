@@ -81,14 +81,49 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  padding-top: 70px;
 }
 
-#distanza, #età, #prezzopieno {
-  width: 70%;
-  height: 50px;
-  margin: auto;
-  background-color: white;
-  color: grey;
-  border: 1px solid black;
-  border-radius: 3px;
+  #first-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+  }
+
+  #second-main {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+    #sx-secondo-main {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+
+      #prezzopieno, #sconto, #totaledapagare {
+        width: 70%;
+        height: 40px;
+        margin: auto;
+      }
+
+      #totaledapagare {
+        font-size: 2em;
+      }
+
+    #dx-secondo-main {
+      width: 30%
+    }
+
+
+    #distanza, #età {
+      width: 70%;
+      height: 50px;
+      margin: auto;
+      background-color: white;
+      color: grey;
+      border: 1px solid black;
+      border-radius: 3px;
