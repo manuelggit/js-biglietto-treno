@@ -31,6 +31,7 @@ body {
 #header {
   background: black;
 }
+
   #cont-header {
     display: flex;
     flex-direction: row;
@@ -78,52 +79,56 @@ body {
 /* MAIN */
 
 #main {
+  height: calc(100vh - 150px);
+  overflow: scroll;
+}
+
+.main-interno {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 70px;
+  width: 70%;
+  margin: auto;
 }
 
   #first-main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 150px;
   }
+
+    #distanza, #eta {
+     width: 100%;
+     height: 50px;
+     background: white;
+     color: grey
+     border: 1px solid black;
+     border-radius: 10px;
+     margin-top: 100px;
+    }
 
   #second-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     height: 250px;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
-    #sx-secondo-main {
-      display: flex;
-      flex-direction: column;
-      width: 70%;
-    }
-
       #prezzopieno, #sconto, #totaledapagare {
-        width: 70%;
+        width: 100%;
         height: 40px;
-        margin: auto;
       }
 
       #totaledapagare {
         font-size: 2em;
       }
 
-    #dx-secondo-main {
-      width: 30%
-    }
+#code {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
+}
 
-
-    #distanza, #età {
-      width: 70%;
-      height: 50px;
-      margin: auto;
-      background-color: white;
-      color: grey;
-      border: 1px solid black;
-      border-radius: 3px;
+/*  */

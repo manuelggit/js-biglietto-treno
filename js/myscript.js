@@ -5,7 +5,7 @@
 // ma c’è uno sconto del 20% per i minorenni
 // e del 40% per gli over 65
 
-var distanza, eta, totale, sconto, prezzo
+var distanza, eta, totale, sconto, prezzo, data
 
 // chiedo all'utente quanti km vuole percorrere
 
@@ -46,3 +46,8 @@ if (eta < 18){
   }
 
 console.log(prezzo - sconto)
+
+
+// genera qr-code
+
+document.getElementById('code').innerHTML = '<img src="img/qrcode.png" alt="">';
